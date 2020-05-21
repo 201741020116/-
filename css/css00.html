@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>标签选择器</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" >
+		<style>
+
+			a:link{
+				color:red;
+			}
+			a:visited{
+				color: yellow;
+			}
+			a:hover{
+				color: pink;
+			}
+			a:active{
+				color: green;
+			}
+			p{
+				color: pink;
+			}
+			#a .aa p{
+				color: yellow;
+			}
+			.aa{
+				height: 100px;
+				width:100px;
+				background-color:red;
+			}
+			.aa:link{
+				background-color:red;
+			}
+			.aa:hover{
+				background-color: pink;
+			}
+			.aa:active{
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度一下</a>
+		<div id="a" class="a">
+			<div id="aa" class="aa">
+				<p>我怎么这么好看</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

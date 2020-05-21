@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定位--图片悬浮放大Demo</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 238px;
+				height: 153px;
+				border: 1px solid red;
+				margin: 30px auto;
+				position: relative;
+				float: left;
+			}
+			div img:hover{
+				width: 338px;
+				height: 203px;
+				position: absolute;
+				top: -25px;
+				left: -50px;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="">
+				<img src="img/dt.png"/>
+			</div>
+			<div class="">
+				<img src="img/dt.png"/>
+			</div>
+			<div class="">
+				<img src="img/dt.png"/>
+			</div>
+			
+			<div class="">
+				<img src="img/dt.png"/>
+			</div>
+	</body>
+</html>

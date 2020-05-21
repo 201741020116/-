@@ -1,0 +1,37 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size=1em;
+	font-family: '微软雅黑';
+}
+ul,ol,dl,li{
+	list-style: none;
+}
+i,em{
+	font-style: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+u,a{
+	text-decoration: none;
+}
+a{
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6{
+	font-style: normal;
+	font-size: 1em;
+}
+input{
+	border: 0;
+}
+form input{
+	outline: none;
+}
+img{
+	display: block;
+}

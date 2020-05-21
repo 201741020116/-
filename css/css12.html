@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>元素层级</title>
+		<!--index:-1 <普通元素<浮动元素<定位元素<index:1 -->
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 150px;
+				height: 150px;
+				background: tomato;
+				float: left;
+				position: absolute;
+				z-index: 1;
+			}
+			p{
+				width: 150px;
+				height: 150px;
+				background: orange;
+				position: absolute;
+				z-index: 2;
+				
+			}
+			.box2{
+				width: 150px;
+				height: 150px;
+				background: yellowgreen;
+				-float: left;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<p></p>
+		<div class="box2"></div>
+		
+	</body>
+</html>

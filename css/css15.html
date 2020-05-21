@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片切换</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 300px;
+				height: 300px;
+				background: red;
+				margin: 50px auto;
+				position: relative;
+			}
+			.box .btnbox{
+				width: 125px;
+				height: 30px;
+				background: darkgrey;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+			a{
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: pink;
+				font-weight: bold;
+				text-decoration:none;
+				text-align: center;
+				line-height: 30px;
+				margin-left: 1px;
+				float: left;
+			}
+			.box .imgbox{
+				width: 300px;
+				height: 300px;
+				overflow: hidden;	
+				-overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="imgbox">
+				<img src="img/animal1.jpg" id="img1"/>
+				<img src="img/animal2.jpg" id="img2"/>
+				<img src="img/animal3.jpg" id="img3"/>
+				<img src="img/animal4.jpg" id="img4"/>
+			</div>
+			<div class="btnbox">
+				<a href="#img1">1</a>
+				<a href="#img2">2</a>
+				<a href="#img3">3</a>
+				<a href="#img4">4</a>
+			</div>
+		</div>
+	</body>
+</html>

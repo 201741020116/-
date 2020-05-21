@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>宽高自适应</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				height: 50px;
+				background: red;
+			}
+			.box2{
+				background: pink;
+				-height:auto;
+			}
+			.box3{
+				background: gold;
+				_height:100px
+				min-height:100px;
+				
+			}
+			.box4{
+				background: cornflowerblue;
+				min-height: 300px;
+				height: auto!important;
+				height: 300px;
+			}
+			.case_box{
+				width: 100%;
+				min-height: 490px;
+				background: #ccc;
+			}
+			.case_box  .case_con_box{
+				width: 1000px;
+				min-height: 490px;
+				margin: 0 auto;
+				background: greenyellow;
+			}
+			h2{
+				height: 100px;
+				background: pink;
+			}
+			.case_box .case_con_box p{
+				font-size: 25px;
+				color: blue;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<p>宽高自适应宽高自适应</p>
+		</div>
+		<div class="box2">
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+			<p>宽高自适应宽高自适应</p>
+		</div>
+		<div class="box3">
+			<p>min-height设置最小高度</p>
+			<p>但是IE6不兼容</p>
+			<p>第一种解决兼容IE6自适应高度方法：</p>
+			<p>  只让IE6识别height</p>
+			<p>  _height 它是hack写法 “-”指的是过滤器 中有IE6 才能识别</p>
+		</div>
+		<div class="box4">
+			<p>第二种解决兼容IE6自适应高度方法：</p>
+			<p>min-height: 300px;</p>
+			<p>height: auto!important;</p>
+			<p>height: 300px;</p>
+			<p>IE6仅能识别第三句，不能识别min-height和important</p>
+			<p>其他浏览器height: auto!important;权重最高</p>
+		</div>
+		<div class="case_box">
+			<div class="case_con_box">
+				<h2>这是案例标题</h2>
+				<p>我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容</p>
+				<p>我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容</p>
+				<p>我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容</p>
+				<p>我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容我是案例中的内容</p>
+			</div>
+		</div>
+		
+	</body>
+</html>

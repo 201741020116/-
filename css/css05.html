@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在父级元素中上下左右居中</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.center {
+				width: 300px;
+				height: 200px;
+				background: coral;
+				margin: 0 auto;
+				text-align: center;
+				-line-height: 500px;
+				float: left;
+			}
+			.center img{
+				vertical-align: middle;
+			}
+			.center span{
+				display: inline-block;
+				width: 0px;
+				height: 100%;
+				vertical-align: middle;
+			}
+			.center{
+				float: left;
+			}
+			.center2 a{
+				display: block;
+				width: 600px;
+				height: 200px;
+				margin: 10px auto;
+				text-align: center;
+			}
+			.center2 img{
+				vertical-align: middle;
+				
+			}
+			.center2 span{
+				height: 100%;
+				width: 0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.center2 a:hover{
+				background: pink;
+			}
+		.hoverer{
+			height: 500px;
+			width:400px;
+			background: grey;
+			margin: 50px auto;
+		}
+		.hoverer p{
+			width: 100px;
+			height: 500px;
+			float: left;
+			
+		}
+		.hoverer .p1{
+			background: pink;
+		
+		}
+		.hoverer .p2{
+			background:orange;
+		}
+		.hoverer .p3{
+			background: tomato;
+		}
+		.hoverer .p4{
+			background: aquamarine;
+		}
+		.hoverer p{
+			width:30px;
+		}
+		p:hover{
+			width: 310px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<img src="img/dt.png"/>
+			<span id=""></span>
+		</div>
+		<div class="center2">
+			<a href="#">
+				<img src="img/logo.png"/>
+				<span id=""></span>
+			</a>
+		</div>
+		<div class="hoverer">
+			<p class="p1"></p>
+			<p class="p2"></p>
+			<p class="p3"></p>
+			<p class="p4"></p>
+		</div>
+	</body>
+</html>

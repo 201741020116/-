@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定位--导航栏</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				width: 464px;
+				height: 34px;
+				margin: 50px auto;
+			}
+			.nav li{
+				list-style: none;
+				float: left;
+			}
+			.nav a{
+				text-decoration: none;
+				display: block;
+				width: 115px;
+				height: 34px;
+				background: #EEE;
+				margin-right: 1px;
+				line-height: 34px;
+				text-align: center;
+				color: #2c353e;
+				font-weight: bold;
+			}
+			.nav1{
+				position: absolute;
+				width: 115px;
+				display: none;
+			}
+			.nav a:hover{
+				background: #333;
+				color:#f4fffa;
+				text-decoration: underline;
+			}
+			.nav li:hover .nav1{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li>
+				<a href="#">首页</a>
+				<ul class="nav1">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">首页</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">产品中心</a>
+				<ul class="nav1">
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">产品中心</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">客户服务</a>
+				<ul class="nav1">
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">客户服务</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">联系我们</a>
+				<ul class="nav1">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

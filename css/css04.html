@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航栏</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.nav1 ul{
+				width: 420px;
+				height: 40px;
+				border-bottom: 1px solid #afafaf;
+				margin:100px auto;
+			}
+			.nav1 ul li{
+				list-style: none;
+				float: left;
+				margin-left:9px ;
+				
+			}
+			.nav1 a{
+				text-decoration: none;
+				padding:0 13px;
+				border: 1px solid #d6d6d6;
+				background: #f9f9f9;
+				color: #bdc2c6;
+				border-bottom: none;
+				display: block;
+				height: 35px;
+				line-height: 35px;
+				margin-top: 4px;
+				
+			}
+			.nav1 a:hover{
+				height: 40px;
+				margin-top: 0;
+				border: 1px solid #bdc2c6;
+				background: #fff;
+				color: #81858e;
+				border-bottom: 0;
+			}
+			
+			.nav2 ul{
+				width: 500px;
+				height: 40px;
+				margin: 100px auto;
+				border-bottom: 15px solid yellow;
+			}
+			.nav2 li{
+				width: 100px;
+				height: 35px;
+				float: left;
+				list-style: none;
+			}
+			.nav2 a{
+				text-decoration: none;
+				padding: 0 15px;
+				height: 35px;
+				display: block;
+				-float: left;
+				background: gainsboro;
+				line-height: 35px;
+				color: #6f737e;
+				margin-top: 5px;
+				text-align: center;
+			}
+			.nav2 a:hover{
+				margin-top: 0;
+				height: 40px;
+				background: yellow;
+				color: cornflowerblue
+			}
+			
+			.nav3 ul{
+				width: 600px;
+				height: 20px;
+				border-bottom: 8px solid #df4c16;
+				margin: 100px auto;
+			}
+			.nav3 li{
+				list-style: none;
+				float: left;
+			}
+			.nav3 a{
+				text-decoration: none;
+				display: block;
+				width: 80px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				color: #6c6c6c;
+				background: #dfdfdf;
+				margin: 0 1px;
+				font-weight: bold;
+			}
+			.nav3 em{
+				font-style: normal;
+				display: none;
+			}
+			.nav3 a:hover{
+				background: #df4c16;
+				
+			}
+			.nav3 a:hover em{
+				display: block;
+				color: #fff;
+				
+			}
+			.nav3 a:hover span{
+				display: none;
+			}
+			.list p{
+				display: list-item;
+				list-style-position: inside;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="nav1">
+			<ul>
+				<li><a href="#">tab one</a></li>
+				<li><a href="#">tab two</a></li>
+				<li><a href="#">tab three</a></li>
+				<li><a href="#">tab four</a></li>
+			</ul>
+		</div>
+		<div class="nav2">
+			<ul>
+				<li><a href="#">sample</a></li>
+				<li><a href="#">sample</a></li>
+				<li><a href="#">sample</a></li>
+				<li><a href="#">sample</a></li>
+				<li><a href="#">sample</a></li>
+			</ul>
+		</div>
+		<div class="nav3">
+			<ul>
+				<li>
+					<a href="#">
+					<span>Home</span>
+					<em>首页</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span>Home</span>
+					<em>首页</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span>Home</span>
+					<em>首页</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span>Home</span>
+					<em>首页</em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<span>Home</span>
+					<em>首页</em>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="list">
+			<p>了解一下 就ok列表元素</p>
+			<p>了解一下 就ok列表元素</p>
+			<p>了解一下 就ok列表元素</p>
+			<p>了解一下 就ok列表元素</p>
+			
+		</div>
+	</body>
+</html>
